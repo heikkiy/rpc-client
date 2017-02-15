@@ -817,6 +817,10 @@
                 isDebug = !!blnEnabled;
             };
 
+            RPC_API.rpcClientVersion = function () {
+                return rpcClientVersion;
+            };
+
             RPC_API.log = function () {
                 if (window.console && window.console.log) {
                     window.console.log.apply(window.console, arguments);
